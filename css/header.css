@@ -9,14 +9,41 @@ body {
 
 .header_container {
     position: fixed;
+    display: flex;
     width: 100%;
     top: 0;
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
 }
 
+
 .header_container img {
-    height: 5%;
-    width: 5%;
+    height: 100%;
+    width: 30%;
+}
+
+.logo_container {
+    width: 20%;
+}
+
+.searchbar_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar_search {
+    border: 1px solid black;
+    height: 30%;
+    border-radius: 5%;
+}
+
+.link_container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.link_container a {
+    width: 11vw;
 }
 
