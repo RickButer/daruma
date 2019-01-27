@@ -13,7 +13,7 @@ body {
     display: flex;
     width: 100%;
     top: 0;
-    /* justify-content: space-between; */
+    box-shadow: 0 2px 20px black;
 }
 
 
@@ -69,5 +69,41 @@ body {
     font-size: 25px;
     color: black;
     height: 30%;
+}
+
+.dropdown_my_account {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    border: none;
+    color: black;
+    background-color: red;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 25px;
+    border-radius: 10%;
+}
+
+.dropdown_my_account_content {
+    position: absolute;
+    background-color: rgba(192, 192, 192, 0.5);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: none;
+}
+
+.dropdown_my_account_content a {
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_my_account_content a:hover {
+    background-color: rgba(192, 192, 192, 0.8);    ;
+}
+
+.dropdown_my_account:hover .dropdown_my_account_content{
+    display: block;
 }
 
