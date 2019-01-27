@@ -17,7 +17,7 @@
             <a href="#" class="daruma_text">Daruma Shop</a>
         </div>
         <div class="searchbar_container">
-            <input type="text" class="navbar_search" placeholder="find your daruma item">
+            <input type="text" class="navbar_search" placeholder="find your daruma item...">
         </div>
         <div class="link_container">
             <a href="#">What is a daruma</a>

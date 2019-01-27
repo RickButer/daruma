@@ -50,7 +50,6 @@ body {
 .navbar_search {
     border: 1px solid black;
     height: 30%;
-    border-radius: 5%;
     width: 100%;
 }
 
@@ -78,7 +77,7 @@ body {
 
 .dropbtn {
     border: none;
-    color: black;
+    color: white;
     background-color: red;
     font-family: 'East Sea Dokdo', cursive;
     font-size: 25px;
