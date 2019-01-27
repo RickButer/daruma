@@ -1,6 +1,7 @@
 body {
     top: 0;
     margin: 0;
+    font-family: 'East Sea Dokdo', cursive;
 }
 
 .debug {
@@ -19,31 +20,54 @@ body {
 .header_container img {
     height: 100%;
     width: 30%;
+    margin-top: 5px;
 }
 
 .logo_container {
-    width: 20%;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.daruma_text {
+    width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    text-decoration: none;
+    outline: none;
+    font-size: 30px;
+    color: black;
 }
 
 .searchbar_container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20vw;
 }
 
 .navbar_search {
     border: 1px solid black;
     height: 30%;
     border-radius: 5%;
+    width: 100%;
 }
 
 .link_container {
     display: flex;
     align-items: center;
     text-align: center;
+    width: 60vw;
+    justify-content: space-around;
 }
 
 .link_container a {
-    width: 11vw;
+    width: 12vw;
+    text-decoration: none;
+    outline: none;
+    font-size: 25px;
+    color: black;
+    height: 30%;
 }
 
