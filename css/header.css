@@ -99,10 +99,32 @@ body {
 }
 
 .dropdown_my_account_content a:hover {
-    background-color: rgba(192, 192, 192, 0.8);    ;
+    background-color: rgba(192, 192, 192, 0.8);
 }
 
 .dropdown_my_account:hover .dropdown_my_account_content{
     display: block;
 }
+
+.dropdown_filter {
+    display: flex;
+    margin-top: 15vh;
+    justify-content: center;
+}
+
+.dropdown_filter img {
+    cursor: pointer;
+    width: 1.5vw;
+    height: 3vh;
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+    animation: filter_down 2.5s infinite forwards;
+}
+
+@keyframes filter_down {
+    50%{border-bottom: 2px solid black;}
+    100%{border-bottom: 2px solid white;}
+}
+
+
 

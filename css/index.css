@@ -1,0 +1,35 @@
+body {
+    top: 0;
+    margin: 0;
+    font-family: 'East Sea Dokdo', cursive;
+    background-image: url(../images/png/index_daruma.png);
+    background-size: cover;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+.header_container {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 2px 20px black;
+}
+
+.index_container {
+    margin-top: 30px;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_quotes {
+    width: 100%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
