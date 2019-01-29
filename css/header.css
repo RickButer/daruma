@@ -8,12 +8,14 @@ body {
     border: 1px solid black;
 }
 
+
 .header_container {
     position: fixed;
     display: flex;
     width: 100%;
     top: 0;
-    box-shadow: 0 2px 20px black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
 }
 
 
@@ -110,7 +112,6 @@ body {
 .dropdown_filter {
     display: flex;
     margin-top: 2vh;
-    /* position: fixed; */
     justify-content: center;
     transition: 1s;
 }
@@ -136,16 +137,15 @@ body {
 
 .filter_container {
     width: 100%;
-    height: 0vh; /* set with javascript */
+    height: 5vh; 
     margin-top: 97px;
-    transition: 1s;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .filter_buttons {
-    display: none; /* set with javascript */
+    
 }
 
 .filter_buttons button {

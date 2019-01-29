@@ -24,7 +24,7 @@
         
         $conn = null;
     
-        header("../../index.php");
+        header("Location: ../../index.php");
 
         // $folderString = "../img/";
         // $folderString .= $_GET["user_firstname"];
