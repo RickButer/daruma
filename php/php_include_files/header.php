@@ -22,7 +22,8 @@
             </div>
             <div class="link_container">
                 <a href="#">What is a daruma</a>
-                <a href="#">How do I use a daruma</a>
+                <a href="#">How to use a daruma</a>
+                <a href="card_page.php">shop</a>
                 <div class="dropdown_my_account">
                     <button class="dropbtn">my account</button>
                     <div class="dropdown_my_account_content">
@@ -33,16 +34,11 @@
                 </div>
             </div>
         </div>
-        <div class="filter_container">
-            <div class="filter_buttons"><button>daruma dolls</button></div>
-            <div class="filter_buttons"><button>daruma clothing</button></div>
-            <div class="filter_buttons"><button>daruma phone cases</button></div>
-            <div class="filter_buttons"><button>daruma stationary</button></div>
-        </div>
+
     
-    <div class="dropdown_filter">
+    <!-- <div class="dropdown_filter">
         <img id="dropdown_arrow" onclick="filter_dropdown()" src="images/png/down_arrow.png" />
-    </div>
+    </div> -->
     <script src="js/header.js"></script>
 </body>
 
