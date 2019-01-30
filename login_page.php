@@ -13,17 +13,21 @@
     <?php include 'php/php_include_files/header.php';?>
     <div class="login_container">
         <div class="login_box">
+            <div class="name_password_box">
+                <form class="loginForm" action="loginFormHandler.php" method="POST">
+                    <label for="username">Email:</label>
+                    <input type="email" id="username" name="user_email" autofocus required />
 
-        <form class="loginForm" action="loginFormHandler.php" method="POST">
-        <label for="username">Email:</label>
-        <input type="email" id="username" name="user_email" autofocus required/>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="user_password" required />
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="user_password" required/>
+                    <button type="submit" class="submitButton">Login</button>
+            </div>
 
-        <button type="submit" class="submitButton">Login</button>
-        <p>no account yet? <a href="form_page.php">make one here quick</a></p>
-    </form>
+            <div class="make_account_box">
+                <p>no account yet? <a href="form_page.php">make one here quick</a></p>
+            </div>
+            </form>
         </div>
 
     </div>

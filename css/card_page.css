@@ -13,11 +13,11 @@
 .card_box {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    width: 18vw;
+    height: 45vh;
+    width: 15vw;
     margin: 20px auto;
     align-items: center;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .card_box:hover {
@@ -49,10 +49,22 @@
     font-size: 12px;
 }
 
-.card_price {
+.card_price_stock_box {
     width: 80%;
     height: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_price {
+    width: 50%;
     text-align: center;
+}
+
+#card_stock {
+    width: 50%;
+    text-align: center;
+    font-size: 12px;
 }
 
 /* start filter form******************** */
@@ -68,4 +80,16 @@
 .filter_header{
     border-bottom: red 1px solid;
     text-align: center;
+}
+
+#card_stock_low {
+    color: red;
+    text-align: center;
+    font-size: 12px;
+}
+
+#card_stock_high {
+    color: green;
+    text-align: center;
+    font-size: 12px;
 }
