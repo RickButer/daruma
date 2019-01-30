@@ -21,7 +21,6 @@
             <?php include 'php/php_include_files/card.php';?>
         </div>
     </div>
-    <script src="js/header.js"></script>
 </body>
 
 </html>

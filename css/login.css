@@ -8,11 +8,69 @@
 
 .login_box {
     width: 50vw;
-    height: 50vh;
+    height: 40vh;
     background-color: rgba(223, 13, 13, 0.979);
     margin-top: 100px;
     border-radius: 15%;
-    padding: 30px 30px;
+    padding: 60px 30px;
     display: flex;
     justify-content: center;
+}
+
+.name_password_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    }
+
+.make_account_box {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: center;  
+    justify-content: space-between;
+}
+
+.submit_button {
+    border: none;
+    width: 4vw;
+    height: 4vh;
+    color: black;
+    background-color: rgba(223, 13, 13, 0.979);
+    border-radius: 5%;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.6s;
+    border: 2px solid black;
+}
+
+.submit_button:hover {
+    color: white;
+    background-color: black;
+    width: 10vw;
+    border: 2px solid white;
+}
+
+
+.space_maker {
+    width: 10vw;
+}
+
+#arrow_up {
+    height: 10vh;
+    width: 5vw;
+}
+
+#login_daruma {
+    height: 20vh;
+    animation: login_daruma 6s infinite forwards;
+}
+
+@keyframes login_daruma {
+    0%{transform: rotate(0deg);}
+    10%{transform: rotate(-20deg);}
+    20%{transform: rotate(20deg);}
+    25%{transform: rotate(0deg);}
 }

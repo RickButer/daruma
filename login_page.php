@@ -15,23 +15,25 @@
         <div class="login_box">
             <div class="name_password_box">
                 <form class="loginForm" action="loginFormHandler.php" method="POST">
-                    <label for="username">Email:</label>
-                    <input type="email" id="username" name="user_email" autofocus required />
+                    <div><label for="username">Email:</label><br />
+                    <input type="email" id="username" name="user_email" autofocus required /></div><br /><br /><br />
 
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="user_password" required />
+                    <div><label for="password">Password:</label><br />
+                    <input type="password" id="password" name="user_password" required /></div><br /><br />
 
-                    <button type="submit" class="submitButton">Login</button>
+                    <div><button type="submit" class="submit_button">Login</button></div>
             </div>
-
+            <div class="space_maker"></div>
             <div class="make_account_box">
-                <p>no account yet? <a href="form_page.php">make one here quick</a></p>
+                <a href="form_page.php"><img id="login_daruma" src="images/png/login_daruma.png"/></a>
+                <div><img id="arrow_up" src="images/png/arrow_up.png"/></div>
+                <div><p>no account yet?<br /> click the daruma!</p></div>
             </div>
             </form>
         </div>
 
     </div>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>
