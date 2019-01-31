@@ -1,12 +1,17 @@
 <?php
-
+   
     //CARD.PHP
 
-    include "db_connection.php";        
+    include "db_connection.php";   
 
-    $sql_querie = "SELECT photo, name, description, price, stock FROM `daruma_items`";
-    
-    $db_result = $conn->query($sql_querie);  
+    if(isset($_GET['type'])){
+        $category = $_GET['type'];
+        $querie = "SELECT photo, name, description, price, stock FROM `daruma_items` WHERE item_type = $category";        
+    }else{
+        $querie = "SELECT photo, name, description, price, stock FROM `daruma_items`";
+    }
+
+    $db_result = $conn->query($querie);  
 
     foreach ($db_result as $row)
     {
@@ -37,4 +42,5 @@
         }
         return $stockID;
     }
+
 ?>

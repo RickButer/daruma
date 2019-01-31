@@ -1,1 +1,0 @@
-var login_daruma = document.getElementById('login_daruma');

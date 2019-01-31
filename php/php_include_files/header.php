@@ -29,7 +29,6 @@
                     <div class="dropdown_my_account_content">
                         <a href="login_page.php">login</a>
                         <a href="form_page.php">register</a>
-                        <a href="#">my page</a>
                     </div>
                 </div>
             </div>

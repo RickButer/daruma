@@ -18,23 +18,20 @@
             </div><div class="white_space"></div>
             <form action="">
                 <div class="options_dropdown">
-                    <select name="type">
+                    <select id="type_select" onchange="cardStyleChange(this.value)">
                         <option value="0">daruma dolls</option>
                         <option value="1">clothing</option>
                         <option value="2">phone cases</option>
                         <option value="3">stationary</option>
                     </select>
                 </div>
-
-
-
-
             </form>
         </div>
-        <div class="card_container">
+        <div id="cards" class="card_container">
             <?php include 'php/php_include_files/card.php';?>
         </div>
     </div>
+    <script src="js/card.js"></script>
 </body>
 
 </html>
