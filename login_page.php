@@ -15,10 +15,10 @@
         <div class="login_box">
             <div class="name_password_box">
                 <form class="loginForm" action="loginFormHandler.php" method="POST">
-                    <div><label for="username">Email:</label><br />
+                    <div><label for="username" id="email_style">Email:</label><br />
                     <input type="email" id="username" name="user_email" autofocus required /></div><br /><br /><br />
 
-                    <div><label for="password">Password:</label><br />
+                    <div><label for="password" id="password_style">Password:</label><br />
                     <input type="password" id="password" name="user_password" required /></div><br /><br />
 
                     <div><button type="submit" class="submit_button">Login</button></div>

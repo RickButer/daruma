@@ -11,7 +11,7 @@
         include "db_connection.php";
 
         try { //database name only!
-                $sql = "INSERT INTO costumers (firstname, lastname, email, password, login_name)
+                $sql = "INSERT INTO costumers (firstname, lastname, email, user_password, login_name)
                 VALUES ('$firstname', '$lastname', '$email', '$costumer_password', '$login_name')";
                 // use exec() because no results are returned
                 $conn->exec($sql);

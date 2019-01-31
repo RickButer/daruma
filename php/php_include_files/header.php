@@ -14,14 +14,14 @@
 <body>
         <div class="header_container">
             <div class="logo_container">
-                <img src="images/png/daruma_logo.png" />
-                <a href="index.php" class="daruma_text">Daruma Shop</a>
+                <div class="logo_image_class"><a href="index.php"><img id="header_logo_image" src="images/png/daruma_logo.png" /></a></div>
+                <div class="daruma_text">Daruma Shop</div>
             </div>
             <div class="searchbar_container">
                 <input type="text" class="navbar_search" placeholder="find your daruma item quick...">
             </div>
             <div class="link_container">
-                <a href="#">What is a daruma</a>
+                <a href="what_is_a_daruma.php">What is a daruma</a>
                 <a href="#">How to use a daruma</a>
                 <a href="card_page.php">shop</a>
                 <div class="dropdown_my_account">
@@ -33,13 +33,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-    
-    <!-- <div class="dropdown_filter">
-        <img id="dropdown_arrow" onclick="filter_dropdown()" src="images/png/down_arrow.png" />
-    </div> -->
-    <script src="js/header.js"></script>
+</div>
 </body>
 
 </html>
