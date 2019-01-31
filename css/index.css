@@ -12,9 +12,9 @@ body {
 }
 
 .index_container {
-    margin-top: 30px;
+    margin-top: 150px;
     width: 50vw;
-    height: 80vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,4 +25,38 @@ body {
     font-size: 40px;
     text-align: center;
     font-family: 'Caveat', cursive;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.shop_now {
+    height: 18vh;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: -100px;
+    border: 2px solid rgba(223, 13, 13, 0.979);
+    transition: 0.5s;
+}
+
+.shop_now:hover {
+    box-shadow: 0 0 50px 10px rgba(223, 13, 13, 0.979);
+}
+
+.shop_now a {
+    text-decoration: none;
+    color: rgba(223, 13, 13, 0.979);
+    font-size: 40px;
+    line-height: 40px;
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.white_space {
+    height: 10vh;
 }

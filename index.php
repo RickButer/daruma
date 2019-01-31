@@ -15,8 +15,10 @@
     <?php include 'php/php_include_files/header.php';?>
     <div class="index_container">
         <div class="index_quotes">
-            <p>"七 転 び 八 起 き"</p>
-            <p>~Fall down seven times, get up eight~</p>
+            <div><p>"七 転 び 八 起 き"</p></div>
+            <div><p>~Fall down seven times, get up eight~</p><br /></div>
+            <div class="white_space"></div>
+            <div class="shop_now"><a href="card_page.php">start<br /> shopping!</a></div>
         </div>
     </div>
 </body>

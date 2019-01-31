@@ -4,6 +4,13 @@
 
     include "db_connection.php";   
 
+    // if (isset($_GET['price'])){
+    //     $price = $_GET['price'];
+    //     $querie = "SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC";
+    // }else{
+    //     $querie = "SELECT photo, name, description, price, stock FROM `daruma_items`";
+    // }
+
     if(isset($_GET['type'])){
         $category = $_GET['type'];
         $querie = "SELECT photo, name, description, price, stock FROM `daruma_items` WHERE item_type = $category";        
@@ -44,3 +51,5 @@
     }
 
 ?>
+
+SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC

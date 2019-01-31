@@ -17,12 +17,20 @@
                 <p>what are you looking for?</p>
             </div><div class="white_space"></div>
             <form action="">
+                <p>select type</p>
                 <div class="options_dropdown">
                     <select id="type_select" onchange="cardStyleChange(this.value)">
                         <option value="0">daruma dolls</option>
                         <option value="1">clothing</option>
                         <option value="2">phone cases</option>
                         <option value="3">stationary</option>
+                    </select>
+                </div><br /><br />
+                <p>price</p>
+                <div class="price_dropdown">
+                    <select id="price_select" onchange="cardStyleChangePrice(this.value)">
+                        <option value="0">low to high</option>
+                        <option value="1">high to low</option>
                     </select>
                 </div>
             </form>
