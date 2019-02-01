@@ -82,7 +82,7 @@
 
 #login_daruma {
     height: 20vh;
-    animation: login_daruma 6s infinite forwards;
+    animation: login_daruma 4s infinite forwards 2s;
 }
 
 @keyframes login_daruma {

@@ -22,7 +22,7 @@
             </div>
             <div class="link_container">
                 <a href="what_is_a_daruma.php">What is a daruma</a>
-                <a href="#">How to use a daruma</a>
+                <a href="how_to_use_a_daruma.php">How to use a daruma</a>
                 <a href="card_page.php">shop</a>
                 <div class="dropdown_my_account">
                     <button class="dropbtn">my account</button>

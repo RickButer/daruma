@@ -76,15 +76,18 @@
     transition: 1s;
     display: flex;
     flex-direction: column;
-    /* justify-content: flex-start; */
     align-items: center;
     text-align: center;
-    height: 60vh;
+    height: 100vh;
 }
 
 .filter_header {
     border-bottom: red 1px solid;
     text-align: center;
+}
+
+.filter_header p{
+    font-size: 18px;
 }
 
 #card_stock_low {
@@ -103,7 +106,7 @@
     height: 5vh;
 }
 
-.options_dropdown select {
+.dropdown select {
     width: 8vw;
     border: none;
     background-color: white;
@@ -117,17 +120,8 @@
     border: 1px solid rgba(223, 13, 13, 0.979);
 }
 
-
-.price_dropdown select {
-    width: 8vw;
-    border: none;
-    background-color: white;
-    height: 4vh;
-    width: 9vw;
-    color: rgba(223, 13, 13, 0.979);
-    border-radius: 10%;
-    font-family: 'Miriam Libre', sans-serif;
-    font-size: 16px;
-    outline: none;
-    border: 1px solid rgba(223, 13, 13, 0.979);
+.sections p{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    font-size: 20px;
 }

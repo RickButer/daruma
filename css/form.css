@@ -16,10 +16,6 @@
     margin-top: 300px;
 }
 
-.daruma_image_gif {
-
-}
-
 .form_box {
     display: flex;
     flex-direction: column;
@@ -27,7 +23,7 @@
     height: 70vh;
     width: 50vw;
     margin-top: 300px;
-    background: rgba(223, 13, 13, 0.952);
+    background: rgba(201, 12, 12, 0.945);
 }
 
 h1 {

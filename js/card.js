@@ -1,11 +1,14 @@
+// var url = "php/php_include_files/card.php?";
 
 function cardStyleChange(type) {
     console.log(type);
-    GetInfoFromDatabase("php/php_include_files/card.php?type=" + type, showData);
+    // url = url + type;
+
+    GetInfoFromDatabase("php/php_include_files/card.php?" + type, showData);
 }
 
 function showData(data) {
-    console.log(data.responseText);
+    //console.log(data.responseText);
     var div = document.getElementById('cards');
     div.innerHTML = data.responseText;
   } 
