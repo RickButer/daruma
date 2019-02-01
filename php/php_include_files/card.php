@@ -49,7 +49,6 @@
         }
         return $stockID;
     }
+    // SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC
 
 ?>
-
-SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC

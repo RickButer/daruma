@@ -6,6 +6,7 @@
     justify-content: center;
 }
 
+
 .login_box {
     width: 50vw;
     height: 40vh;
@@ -89,4 +90,32 @@
     10%{transform: rotate(-20deg);}
     20%{transform: rotate(20deg);}
     25%{transform: rotate(0deg);}
+}
+
+.name_password_box p{
+    color:  white;
+    font-size: 20px;
+    letter-spacing: 6px;
+    border-bottom: 1px solid black; 
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.name_password_box input[type=email] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    width: 90%;
+    height: 25px;
+    padding: 12px 20px;
+}
+
+.name_password_box input[type=password] {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    width: 90%;
+    height: 25px;
+    padding: 12px 20px;
 }
