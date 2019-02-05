@@ -45,3 +45,12 @@ body {
     80%{transform: rotate(-30deg);}
     100%{transform: rotate(35deg);}
 }
+
+#counter a{
+    color: rgba(223, 13, 13, 0.979);
+    text-decoration: none;
+    outline: none;
+    border: 1px solid rgba(223, 13, 13, 0.979);
+    font-size: 20px;
+    padding: 5px;
+}

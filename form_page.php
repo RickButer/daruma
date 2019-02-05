@@ -10,7 +10,15 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <script src="js/header.js"></script>
-    <title><?php echo 'welcome ' . $_SESSION['login_name'];?></title>
+    <title>
+    <?php 
+    if(isset($_SESSION['login_name'])) {
+        echo 'welcome ' . $_SESSION['login_name'];
+    }else{
+        echo 'daruma shop';
+    }
+   ?>
+    </title>
 </head>
 
 <body>

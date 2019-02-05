@@ -1,0 +1,83 @@
+.debug {
+    border: 1ps solid black;
+}
+
+body {
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.shopping_title_container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.shopping_title_container p{
+    border-bottom: 1px solid rgba(223, 13, 13, 0.979);
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.full_container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px; 
+}
+
+.item_container {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.total_container {
+    display: flex;
+    width: 30%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+}
+
+.total_container p{
+    border-bottom: 1px solid rgba(223, 13, 13, 0.979);
+    font-size: 20px;
+    padding: 20px;
+}
+
+.shopping_cart_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 20vh;
+}
+
+.total_image {
+    height: 100%;
+    width: 30%;
+}
+
+.total_name {
+    height: 35%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.total_description {
+    height: 100%;
+    width: 30%;
+    text-align: center;
+}
+
+.total_price {
+    height: 35%;
+    width: 10%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}

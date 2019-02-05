@@ -11,7 +11,15 @@ session_start();
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
-    <title><?php echo 'welcome ' . $_SESSION['login_name'];?></title>
+    <title>
+    <?php 
+    if(isset($_SESSION['login_name'])) {
+        echo 'welcome ' . $_SESSION['login_name'];
+    }else{
+        echo 'daruma shop';
+    }
+   ?>
+    </title>
 </head>
 
 <body>

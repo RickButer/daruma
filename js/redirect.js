@@ -8,7 +8,7 @@ function redirect(){
   window.location = url;
  }else{
   seconds--;
-  document.getElementById("counter").innerHTML = "<p>you can start shopping in "+seconds+" seconds...</p>";
+  document.getElementById("counter").innerHTML = "<p>you can start shopping in "+seconds+" seconds...<br /><br />in a hurry? click <a href='card_page.php'>here</a></p>";
   setTimeout("redirect()", 1000)
  }
 }

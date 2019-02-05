@@ -10,7 +10,13 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/how_to_use_a_daruma.css">
     <title>
-        <?php echo 'welcome ' . $_SESSION['login_name'];?>
+    <?php 
+    if(isset($_SESSION['login_name'])) {
+        echo 'welcome ' . $_SESSION['login_name'];
+    }else{
+        echo 'daruma shop';
+    }
+   ?>
     </title>
 </head>
 <body>

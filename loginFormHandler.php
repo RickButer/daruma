@@ -21,14 +21,14 @@
         session_start();
         $_SESSION['login_name'] = $login_name;
         $_SESSION['role'] = $role;
-        // echo $_SESSION['role'];
         header("location: welcome_page.php");
 
     }
     else 
     {
+      
         echo 'The username or password is incorrect!';
-        ;
+        
     }
 
 ?>
