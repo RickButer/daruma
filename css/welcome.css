@@ -1,0 +1,47 @@
+body {
+    font-family: 'Miriam Libre', sans-serif;
+}
+
+.debug {
+    border: 1px solid black;
+}
+
+.welcome_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome_logo {
+ width: 20vw;
+ height: 30vh;
+}
+
+.welcome_text {
+    width: 40%;
+    border: 1px solid rgba(223, 13, 13, 0.979);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome_text p{
+    color: rgba(223, 13, 13, 0.979);
+    font-size: 30px;
+}
+
+.welcome_logo img {
+    width: 20vw;
+ animation: welcome 7s infinite forwards;
+}
+
+@keyframes welcome{
+    0%{transform: rotate(-10deg);}
+    20%{transform: rotate(15deg);}
+    40%{transform: rotate(-20deg);}
+    60%{transform: rotate(25deg);}
+    80%{transform: rotate(-30deg);}
+    100%{transform: rotate(35deg);}
+}

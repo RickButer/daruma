@@ -20,7 +20,7 @@ body {
     box-shadow: 0 1px 5px grey;
 }
 
-.logo_image_class {
+.logo_image_class{
     width: 60%;
     align-items: center;
     text-align: center;
@@ -28,6 +28,7 @@ body {
 
 #header_logo_image {
     width: 60%;
+    height: 80px;
     padding-right: 10px;
 }
 
@@ -55,10 +56,14 @@ body {
     width: 15vw;
 }
 
+
 .navbar_search {
-    border: 1px solid black;
-    height: 30%;
+    border: none;
+    height: 35%;
     width: 100%;
+    padding: 0px 20px;
+    outline: none;
+    border-bottom: 1px solid black;
 }
 
 .link_container {
@@ -145,3 +150,26 @@ body {
 }
 
 
+.cart img{
+    width: 40px;
+}
+
+#shopping_box_true {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shopping_box_false {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#destroy {
+    color: red;
+    font-weight: bold;
+}

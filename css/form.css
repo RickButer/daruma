@@ -66,8 +66,8 @@ h1 {
 
 #submit_style {
     border: none;
-    height: 20vh;
-    width: 15vw;
+    height: 9vh;
+    width: 11vw;
     color: black;
     background-color: rgba(223, 13, 13, 0.979);
     border-radius: 5%;
@@ -76,13 +76,13 @@ h1 {
     border: 2px solid black;
     transition: 0.6s;
     box-shadow: 0 0 20px white;
+    border: 2px solid white;
+    color: white;
 }
 
 #submit_style:hover {
-    border: 2px solid white;
-    color: white;
-    width: 12vw;
-    height: 15vh;
+    color: black;
+    border: 2px solid black;
 }
 
 .register_box {

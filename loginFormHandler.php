@@ -1,11 +1,12 @@
 <?php
     include "php/php_include_files/db_connection.php";
 
-    $user_email = $_POST['user_email'];
+    $user_email = $_POST['email'];
     $user_password = $_POST['user_password'];
 
-    $result = "SELECT firstname
-               FROM costumers
+
+    $result = "SELECT *
+               FROM costumers 
                WHERE email = '$user_email' 
                AND user_password = '$user_password'";
 
@@ -13,16 +14,21 @@
 
     if ($db_result->rowCount() != 0){
         foreach($db_result as $row){
-            $firstname = $row['firstname'];
-        }
-        
-        echo "Welcome " . $firstname;
-        header("Location:index.php");
+            $login_name = $row['login_name'];
+            $role = $row['role'];
+
+        }       
+        session_start();
+        $_SESSION['login_name'] = $login_name;
+        $_SESSION['role'] = $role;
+        // echo $_SESSION['role'];
+        header("location: welcome_page.php");
+
     }
     else 
     {
         echo 'The username or password is incorrect!';
-        header("location:login_page.php");
+        ;
     }
 
 ?>

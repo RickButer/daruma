@@ -1,13 +1,16 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/form.css">
     <script src="js/header.js"></script>
-    <title>Document</title>
+    <title><?php echo 'welcome ' . $_SESSION['login_name'];?></title>
 </head>
 
 <body>
@@ -25,7 +28,7 @@
                 </div>
                 <div class="register_button_box">
                     <div class="register_box">
-                        <div><label id="first_name_style">first name*</label>
+                        <div><label id="first_name_style">first name*</label><br />
                             <input class="input_types" type="text" id="first_name" name="costumer_firstname" autofocus
                                 required></div>
 

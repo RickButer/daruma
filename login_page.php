@@ -1,12 +1,15 @@
+<?php
+session_start(); 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>Document</title>
+    <title><?php echo 'welcome ' . $_SESSION['login_name'];?></title>
 </head>
 
 <body>
@@ -18,7 +21,7 @@
                 <p>Login</p>
                 <form class="loginForm" action="loginFormHandler.php" method="POST">
                     <div><label for="username" id="email_style">Email:</label><br />
-                        <input type="email" id="username" name="user_email" autofocus required /></div><br /><br />
+                        <input type="email" id="username" name="email" autofocus required /></div><br /><br />
 
                     <div><label for="password" id="password_style">Password:</label><br />
                         <input type="password" id="password" name="user_password" required /></div><br /><br />
@@ -38,7 +41,6 @@
 
 
     </div>
-    <script src="js/index.js"></script>
 </body>
 
 </html>
