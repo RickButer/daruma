@@ -119,3 +119,29 @@
     height: 25px;
     padding: 12px 20px;
 }
+
+#error_true {
+    font-size: 14px;
+    animation: error 5s forwards;
+    color: black;
+    display: block;
+    letter-spacing: 4px;
+}
+
+#error_false {
+        font-size: 14px;
+        animation: error 5s forwards;
+        color: black;
+        display: none;
+        letter-spacing: 4px;
+    }
+    
+
+@keyframes error{
+    0%{}
+    20%{color: white;}
+    40%{color: black;}
+    60%{color: white;}
+    80%{color: black;}
+    100%{color: white;}
+}

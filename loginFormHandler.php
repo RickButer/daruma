@@ -16,19 +16,19 @@
         foreach($db_result as $row){
             $login_name = $row['login_name'];
             $role = $row['role'];
+            $costumer_id = $row['costumer_id'];
 
         }       
         session_start();
         $_SESSION['login_name'] = $login_name;
         $_SESSION['role'] = $role;
+        $_SESSION['costumer_id'] = $costumer_id;
         header("location: welcome_page.php");
 
     }
     else 
     {
-      
-        echo 'The username or password is incorrect!';
-        
+        header("location: login_page.php?error=");        
     }
 
 ?>

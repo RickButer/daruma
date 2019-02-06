@@ -1,5 +1,13 @@
 <?php
 session_start(); 
+
+if(isset($_GET['error'])){
+    if($_GET['error'] == 1){
+        echo "dude where is my password?";
+    }
+}else{
+    echo "nothing on the hand";
+}
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +34,10 @@ session_start();
 
         <div class="login_box">
             <div class="name_password_box">
+                <?php 
+                include 'php/php_include_files/error.php';
+                echo '<p ' . $error . '>*your password and/or<br /> username is incorrect</p>';
+                ?>
                 <p>Login</p>
                 <form class="loginForm" action="loginFormHandler.php" method="POST">
                     <div><label for="username" id="email_style">Email:</label><br />

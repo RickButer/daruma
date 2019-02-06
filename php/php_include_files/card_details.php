@@ -3,8 +3,9 @@
     //CARD.PHP
 
     include "db_connection.php";   
-
-    $querie = "SELECT photo, name, description, product_id, price, stock FROM `daruma_items`";
+    $product_id = $_GET["aapje"];
+    $querie = "SELECT * FROM daruma_items WHERE product_id = '$product_id'";
+    
     // $addedSelection = false;
 
     // //start size query
@@ -32,16 +33,15 @@
        $stockColor = checkStockAmount($row['stock']); //var for my stock id function
 
         echo 
-        
-        '<div class="card_box">' . 
-        '<img src="' . $row['photo'] . '" class="card_photo" />' . 
-        '<div class="card_name">' . $row['name'] . '</div>' . 
-        '<div class="card_description">' . $row['description'] . '</div>' .
-        '<div class="card_price_stock_box">' .  
-        '<div class="card_price">€' . $row['price'] . '</div>' . 
-        '<div class="details"><a href="card_details_page.php?aapje=' . $row['product_id'] . '">details<a/></div>' . 
-        '<div class="add_to_cart"><a href="#"><img src="images/png/shopping_cart.png"/></a></div>' . 
-        '<div id="' . $stockColor . '">stock: ' . $row['stock'] . '</div>' . 
+
+        '<div class="container">' . 
+        '<div class="photo_holder"><img src="' . $row['photo'] . '"/></div>' . 
+        '<div class="details_box">' . 
+        '<div class="name"><p>Name:<br /><br /> ' . $row['name'] . '</p></div>' . 
+        '<div class="description"><p>Description:<br /><br />' . $row['description'] . '</p></div>' . 
+        '<div class="price"><p>Price: € ' . $row['price'] . '</div>' . 
+        '<div class="stock">Stock: ' . $row['stock'] . '</div>' . 
+        '<div class="details_img"><a href="card_page.php"><img src="images/png/red_arrow.png"/></a></div>' . 
         '</div>' . 
         '</div>';
     }       
