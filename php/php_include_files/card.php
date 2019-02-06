@@ -39,6 +39,8 @@
         '<div class="card_description">' . $row['description'] . '</div>' .
         '<div class="card_price_stock_box">' .  
         '<div class="card_price">€' . $row['price'] . '</div>' . 
+        '<div class="details"><a href="#">details<a/></div>' . 
+        '<div class="add_to_cart"><a href="#"><img src="images/png/shopping_cart.png"/></a></div>' . 
         '<div id="' . $stockColor . '">stock: ' . $row['stock'] . '</div>' . 
         '</div>' . 
         '</div>';
