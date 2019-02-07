@@ -31,20 +31,12 @@ session_start();
             <?php echo $_SESSION['login_name']?>
         </p>
     </div>
-    <div class="full_container">
-        <div class="item_container debug">
-            <div class="shopping_cart_box debug">
-                <div class="total_image debug">image comes here<img src=""/></div>
-                <div class="total_name debug"><p>name comes here</p></div>
-                <div class="total_description debug"><p>description comes here</p></div>
-                <div class="total_price debug"><p>price comes here</p></div>
-            </div>
-        </div>  
-
-        <div class="total_container">
-        <p>your total amount is €</p>
-        </div>
-    </div>
+    <?php
+    
+    include "php/php_include_files/shopping_cart_handler.php";
+    
+    ?>
+    
 </body>
 
 </html>

@@ -1,6 +1,5 @@
 <?php
 session_start(); 
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +7,6 @@ session_start();
 <head>
     <link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
-
 <body>
     <div class="header_container">
         <div class="logo_container">
@@ -41,8 +39,12 @@ session_start();
                     your cart<br />
                     <a id="destroy" href="php/php_include_files/session_destroy.php">logout</a>
                 </div>
-
+                
             </div>
+            <?php
+            include 'cart_excistence.php';
+            echo '<div ' . $admin . '><a href="admin_page.php">ADMIN</a></div>';
+            ?>
         </div>
     </div>
 </body>

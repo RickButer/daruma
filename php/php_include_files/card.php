@@ -4,7 +4,9 @@
 
     include "db_connection.php";   
 
-    $querie = "SELECT photo, name, description, product_id, price, stock FROM `daruma_items`";
+    $querie = "SELECT photo, name, description, product_id, price, stock FROM daruma_items";
+
+  
     // $addedSelection = false;
 
     // //start size query
@@ -40,7 +42,7 @@
         '<div class="card_price_stock_box">' .  
         '<div class="card_price">€' . $row['price'] . '</div>' . 
         '<div class="details"><a href="card_details_page.php?aapje=' . $row['product_id'] . '">details<a/></div>' . 
-        '<div class="add_to_cart"><a href="#"><img src="images/png/shopping_cart.png"/></a></div>' . 
+        '<div class="add_to_cart"><a href="php/php_include_files/add_to_card.php?added=' . $row['product_id'] . '"><img src="images/png/shopping_cart.png"/></a></div>' . 
         '<div id="' . $stockColor . '">stock: ' . $row['stock'] . '</div>' . 
         '</div>' . 
         '</div>';

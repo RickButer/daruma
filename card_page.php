@@ -27,6 +27,7 @@ session_start();
         <div class="flex_holder">
             <div class="filter_box">
                 <div class="filter_header">
+
                     <p>what are you looking for?</p>
                 </div>
                 <form action="">
@@ -85,7 +86,9 @@ session_start();
             </div>
         </div>
         <div id="cards" class="card_container">
+      
             <?php include 'php/php_include_files/card.php';?>
+    
         </div>
     </div>
     <script src="js/card.js"></script>

@@ -53,7 +53,7 @@ if(isset($_GET['error'])){
                 <a href="form_page.php"><img id="login_daruma" src="images/png/login_daruma.png" /></a>
                 <div><img id="arrow_up" src="images/png/arrow_up.png" /></div>
                 <div>
-                    <p>no account yet?<br /> click the daruma!</p>
+                    <p>no account yet?<br /> click on the daruma!</p>
                 </div>
             </div>
         </div>

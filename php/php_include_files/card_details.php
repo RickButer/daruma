@@ -40,7 +40,7 @@
         '<div class="name"><p>Name:<br /><br /> ' . $row['name'] . '</p></div>' . 
         '<div class="description"><p>Description:<br /><br />' . $row['description'] . '</p></div>' . 
         '<div class="price"><p>Price: € ' . $row['price'] . '</div>' . 
-        '<div class="stock">Stock: ' . $row['stock'] . '</div>' . 
+        '<div class="stock"><p>Stock: ' . $row['stock'] . '</p></div>' . 
         '<div class="details_img"><a href="card_page.php"><img src="images/png/red_arrow.png"/></a></div>' . 
         '</div>' . 
         '</div>';

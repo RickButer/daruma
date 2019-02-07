@@ -29,7 +29,7 @@ session_start();
             <div><p>"七 転 び 八 起 き"</p></div>
             <div><p>~Fall down seven times, get up eight~</p><br /></div>
             <div class="white_space"></div>
-            <div class="shop_now"><a href="card_page.php">start<br /> shopping!</a></div>
+            <div class="shop_now"><a href="card_page.php">start your happiness</a></div>
         </div>
     </div>
 </body>
