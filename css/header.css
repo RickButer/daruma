@@ -50,10 +50,14 @@ body {
 }
 
 .searchbar_container {
+    text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 15vw;
+}
+
+.searchbar_container p {
+    color: rgba(223, 13, 13, 0.979);
+    padding-top: 15px;
 }
 
 

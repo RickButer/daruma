@@ -11,10 +11,10 @@ session_start();
     <div class="header_container">
         <div class="logo_container">
             <div class="logo_image_class"><a href="index.php"><img id="header_logo_image" src="images/png/daruma_logo.png" /></a></div>
-            <div class="daruma_text">Daruma Shop</div>
+            <div class="daruma_text">Daruma™</div>
         </div>
         <div class="searchbar_container">
-            <input type="text" class="navbar_search" placeholder="find your daruma item quick..." autofocus />
+            <p>~your shop to happiness~</p>
         </div>
         <div class="link_container">
             <a href="what_is_a_daruma.php">What is a daruma</a>

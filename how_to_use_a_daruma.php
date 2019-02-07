@@ -22,11 +22,15 @@ session_start();
 <body>
 <?php include 'php/php_include_files/header.php';?>
 <div class="container">
-<div class="ucs"></div>
-
-
-
-
+<div class="explanation">
+    <div class="step_1">
+    Step 1: 
+</div>
+    <div class="text">
+        Buy your Daruma doll in the beginning of a new year. At this stage the doll has eyes without pupils.
+    </div>
+</div>
+<div class="photo"><img src="images/step_1.jpg"/></div>
 </div>
 </body>
 </html>

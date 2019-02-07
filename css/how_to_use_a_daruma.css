@@ -1,18 +1,52 @@
+.debug {
+    border: solid 1px black;
+}
 
 .container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 80vh;
-    margin-top: 120px;
+    height: 87vh;
+    margin-top: 50px;
 }
 
-.ucs {
-    height: 60vh;
-    width: 50vw;
-    margin-left: 200px;
-    background-image: url("../images/png/Under-construction.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+.explanation {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.photo {
+    height: 100vw;
+    width: 100vw;
+    position: relative;
+    animation: photo 16s forwards;
+}
+
+.photo img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.step_1{
+    font-weight: bold;
+}
+
+.text {
+    padding-top: 5px;
+}
+
+@keyframes photo {
+    0%{;}
+    25%{;}
+    50%{;}
+    75%{;}
+    100%{;}
 }
