@@ -2,20 +2,10 @@
    
     //CARD.PHP
 
+    
     include "db_connection.php";   
 
     $querie = "SELECT photo, name, description, product_id, price, stock FROM daruma_items";
-
-  
-    // $addedSelection = false;
-
-    // //start size query
-    // if(isset($_GET['size'])){
-    //     $size = $_GET['size'];
-    //     $querie .= " WHERE size = $size";  
-    //     $addedSelection = true; 
-        // "SELECT photo, name, description, price, stock FROM `daruma_items` WHERE size = $size";
-    // }
 
     //start type query
     if(isset($_GET['type'])){

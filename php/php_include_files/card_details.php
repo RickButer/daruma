@@ -37,8 +37,8 @@
         '<div class="container">' . 
         '<div class="photo_holder"><img src="' . $row['photo'] . '"/></div>' . 
         '<div class="details_box">' . 
-        '<div class="name"><p>Name:<br /><br /> ' . $row['name'] . '</p></div>' . 
-        '<div class="description"><p>Description:<br /><br />' . $row['description'] . '</p></div>' . 
+        '<div class="name"><p><br /><br /> ' . $row['name'] . '</p></div>' . 
+        '<div class="description"><p><br /><br />' . $row['description'] . '</p></div>' . 
         '<div class="price"><p>Price: € ' . $row['price'] . '</div>' . 
         '<div class="stock"><p>Stock: ' . $row['stock'] . '</p></div>' . 
         '<div class="details_img"><a href="card_page.php"><img src="images/png/red_arrow.png"/></a></div>' . 

@@ -21,18 +21,21 @@
     flex-direction: column;
 }
 
-.photo {
+.photo_container {
     height: 100vw;
     width: 100vw;
     position: relative;
-    animation: photo 16s forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.photo img {
+.photo{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
+
 }
 
 .step_1{
@@ -41,12 +44,4 @@
 
 .text {
     padding-top: 5px;
-}
-
-@keyframes photo {
-    0%{;}
-    25%{;}
-    50%{;}
-    75%{;}
-    100%{;}
 }

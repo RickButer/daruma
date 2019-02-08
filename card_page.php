@@ -1,5 +1,13 @@
 <?php
 session_start();
+if(isset($_GET['alert'])) {
+    if ($_GET['alert'] == 0) {
+    $message = "please log in or make an account first";
+    echo "<script type='text/javascript'>alert('$message');</script>"; 
+    }
+}else{
+    
+}
 ?>
 
 <!DOCTYPE html>
@@ -17,6 +25,7 @@ session_start();
     }else{
         echo 'daruma shop';
     }
+
    ?>
     </title>
 </head>
