@@ -99,7 +99,8 @@
     color:  white;
     font-size: 20px;
     letter-spacing: 6px;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid white; 
+    padding-bottom: 5px;
     font-family: 'Miriam Libre', sans-serif;
 }
 
@@ -111,6 +112,7 @@
     width: 90%;
     height: 25px;
     padding: 12px 20px;
+    
 }
 
 .name_password_box input[type=password] {
