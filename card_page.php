@@ -6,13 +6,10 @@ if(isset($_GET['alert'])) {
     echo "<script type='text/javascript'>alert('$message');</script>"; 
     }
 }else{
-    
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,18 +22,15 @@ if(isset($_GET['alert'])) {
     }else{
         echo 'daruma shop';
     }
-
    ?>
     </title>
 </head>
-
 <body>
     <?php include 'php/php_include_files/header.php';?>
     <div class="card_filter_container">
         <div class="flex_holder">
             <div class="filter_box">
                 <div class="filter_header">
-
                     <p>what are you looking for?</p>
                 </div>
                 <form action="">
@@ -95,12 +89,9 @@ if(isset($_GET['alert'])) {
             </div>
         </div>
         <div id="cards" class="card_container">
-      
             <?php include 'php/php_include_files/card.php';?>
-    
         </div>
     </div>
     <script src="js/card.js"></script>
 </body>
-
 </html>

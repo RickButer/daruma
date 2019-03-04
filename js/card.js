@@ -1,5 +1,3 @@
-// var url = "php/php_include_files/card.php?";
-
 function cardStyleChange(type) {
     console.log(type);
     // url = url + type;

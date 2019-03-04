@@ -1,7 +1,6 @@
 <?php
 session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +18,6 @@ session_start();
    ?>
     </title>
 </head>
-
 <body>
     <?php include 'php/php_include_files/header.php';?>
     <div class="what_is_a_daruma_container">
@@ -41,12 +39,6 @@ session_start();
         <div class="what_image">
             <div class="what_daruma_image"><img src="images/png/what_daruma.png" /></div>
         </div>
-
-
-
     </div>
-
-
 </body>
-
 </html>

@@ -1,8 +1,6 @@
 <?php
-
 include "db_connection.php";   
 $costumer_id = $_SESSION['costumer_id'];
-
 $query = "SELECT
 photo,
 daruma_items.product_id,
@@ -15,15 +13,11 @@ daruma_items
 INNER JOIN orders ON daruma_items.product_id = orders.product_id
 INNER JOIN costumers ON orders.costumer_id = costumers.costumer_id
 WHERE costumers.costumer_id = $costumer_id";
-
 // $conn->query($query); 
-
 $db_result = $conn->query($query);  
-
 foreach ($db_result as $row)
 {
 echo
-
 '<div class="full_container">' . 
         '<div class="item_container">' . 
             '<div class="shopping_cart_box">' . 
@@ -35,10 +29,6 @@ echo
             '</div>' . 
         '</div>' .
     '</div>';
-
 }
 $conn = null; 
-
-
-
 ?>

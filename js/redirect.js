@@ -1,4 +1,3 @@
-
 var seconds =6;
 var url="card_page.php";
 

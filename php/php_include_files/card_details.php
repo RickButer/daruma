@@ -1,21 +1,8 @@
 <?php
-   
-    //CARD.PHP
-
     include "db_connection.php";   
     $product_id = $_GET["aapje"];
     $querie = "SELECT * FROM daruma_items WHERE product_id = '$product_id'";
     
-    // $addedSelection = false;
-
-    // //start size query
-    // if(isset($_GET['size'])){
-    //     $size = $_GET['size'];
-    //     $querie .= " WHERE size = $size";  
-    //     $addedSelection = true; 
-        // "SELECT photo, name, description, price, stock FROM `daruma_items` WHERE size = $size";
-    // }
-
     //start type query
     if(isset($_GET['type'])){
         $category = $_GET['type'];
@@ -24,16 +11,13 @@
         }else{           
             $querie = $querie;         
         }        
-      
-    
+
     $db_result = $conn->query($querie);  
 
     foreach ($db_result as $row)
     {
        $stockColor = checkStockAmount($row['stock']); //var for my stock id function
-
         echo 
-
         '<div class="container">' . 
         '<div class="photo_holder"><img src="' . $row['photo'] . '"/></div>' . 
         '<div class="details_box">' . 
@@ -58,6 +42,4 @@
         }
         return $stockID;
     }
-    // SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC
-
 ?>

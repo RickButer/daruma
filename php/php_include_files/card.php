@@ -1,8 +1,4 @@
 <?php
-   
-    //CARD.PHP
-
-    
     include "db_connection.php";   
 
     $querie = "SELECT photo, name, description, product_id, price, stock FROM daruma_items";
@@ -16,15 +12,12 @@
             $querie = $querie;         
         }        
       
-    
     $db_result = $conn->query($querie);  
 
     foreach ($db_result as $row)
     {
        $stockColor = checkStockAmount($row['stock']); //var for my stock id function
-
         echo 
-        
         '<div class="card_box">' . 
         '<img src="' . $row['photo'] . '" class="card_photo" />' . 
         '<div class="card_name">' . $row['name'] . '</div>' . 
@@ -50,6 +43,4 @@
         }
         return $stockID;
     }
-    // SELECT photo, name, description, price, stock FROM `daruma_items` ORDER BY price ASC
-
 ?>

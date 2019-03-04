@@ -17,8 +17,6 @@ session_start();
         </div>
         <div id="counter"></div>
         <div class="welcome_logo"><img src="images/png/register_daruma.png" /></div>
-
-
     </div>
 <script src="js/redirect.js"></script>
 </body>

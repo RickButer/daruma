@@ -1,7 +1,6 @@
 <?php
 session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +20,6 @@ session_start();
    ?>
     </title>
 </head>
-
 <body>
         <?php include 'php/php_include_files/header.php';?>
     <div class="index_container">

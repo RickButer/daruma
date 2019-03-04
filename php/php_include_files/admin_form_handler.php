@@ -11,8 +11,6 @@ include "db_connection.php";
         $stationary =  $_GET["stationary"]; //html name
         $size =  $_GET["size"]; //html name
     
-        
-
         try { //database name only!
                 $sql = "INSERT INTO daruma_items (name, description, item_type, price, photo, male_female, iphone_samsung, agenda_postcard, size)
                 VALUES ('$name', '$description', '$item_type', '$price', '$photo', '$gender', '$brand', '$stationary', '$size')";

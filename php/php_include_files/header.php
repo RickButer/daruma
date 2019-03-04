@@ -3,7 +3,6 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" type="text/css" href="css/header.css">
 </head>
@@ -31,7 +30,6 @@ session_start();
             include "cart_excistence.php";
             echo '<div ' . $cartId . '>'; 
             ?>
-
                 <div class="cart">
                     <a href="shopping_cart_page.php"><img src="images/png/shopping_cart.png"></a>
                 </div>
@@ -39,7 +37,6 @@ session_start();
                     your cart<br />
                     <a id="destroy" href="php/php_include_files/session_destroy.php">logout</a>
                 </div>
-                
             </div>
             <?php
             include 'cart_excistence.php';
@@ -48,5 +45,4 @@ session_start();
         </div>
     </div>
 </body>
-
 </html>

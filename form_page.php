@@ -1,7 +1,6 @@
 <?php
 session_start(); 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +19,14 @@ session_start();
    ?>
     </title>
 </head>
-
 <body>
     <?php include 'php/php_include_files/header.php';?>
     <div class="form_container">
         <div class="gif_box">
             <div class="daruma_image_gif"><img src="images/daruma_gif.gif" /></div>
         </div>
-
         <div class="form_box">
             <form action="php/php_include_files/form_handler.php" method="GET">
-
                 <div>
                     <h1>make your own daruma account</h1>
                 </div>
@@ -39,8 +35,6 @@ session_start();
                         <div><label id="first_name_style">first name*</label><br />
                             <input class="input_types" type="text" id="first_name" name="costumer_firstname" autofocus
                                 required></div>
-
-
                         <div><label id="last_name_style">last name</label><br />
                             <input class="input_types" type="text" id="last_name" name="costumer_lastname"></div>
 
@@ -53,8 +47,6 @@ session_start();
                         <div><label id="password_style">choose a password*</label>
                             <input class="input_types" type="password" id="costumer_password" name="costumer_password"
                                 required></div>
-
-
                     </div>
                     <div class="button_box">
                         <div><button type="submit" id="submit_style">Lets get started!</button></div>
@@ -65,5 +57,4 @@ session_start();
     </div>
     </div>
 </body>
-
 </html>
